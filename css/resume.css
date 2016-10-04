@@ -1,0 +1,9 @@
+.top {
+    position:fixed;
+    bottom:0;
+    background:black;
+    display:block;
+    padding:0.5em;
+    text-align:center;
+    width:100%;
+}

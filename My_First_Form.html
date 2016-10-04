@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Form</title>
+    <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<h1>User Login</h1>
+<form method="POST" action="http://requestb.in/qwadpeqw">
+    <p>
+        <label for="username">Username</label>
+        <input id="username" name="username" type="text">
+    </p>
+    <p>
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password">
+    </p>
+    <p>
+        <input type="submit">
+    </p>
+</form>
+<h1>Compose an Email</h1>
+    <form method="post" action="http://requestb.in/qwadpeqw">
+        <p>
+            <label for="from">To</label>
+            <input id="from" name="From" type="text"
+        </p>
+        <p>
+            <label for="To">From</label>
+            <input id="To" name="To" type="text"
+        </p>
+        <p>
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject" type="text">
+        </p>
+            <label for="body">Body</label>
+            <textarea id="body" name="body" rows="5" cols="40"></textarea>
+        <br>
+        <input type="checkbox" id="Save_Copy_to_Sent_Folder" name="Save_Copy_to_Sent_Folder" value="yes" checked>
+        <label for="Save_Copy_to_Sent_Folder">Save Copy to Sent Folder</label>
+        <br>
+        <button type="Submit">Send</button>
+</form>
+    <p>Which colors do you like?</p>
+<form method="post" action="http://requestb.in/qwadpeqw">
+        <label><input type="checkbox" id="os1" name="os[]" value="Red"> Green</label>
+        <label><input type="checkbox" id="os2" name="os[]" value="Green"> Red</label>
+        <label><input type="checkbox" id="os3" name="os[]" value="Blue"> Blue</label>
+    <br>
+    <button type="submit">Send</button>
+</form>
+
+<form method="post" action="http://requestb.in/qwadpeqw">
+<p>What is Your Favorite Ice Cream Flavor?</p>
+<label>
+    <input type="radio" name="q1" value="Chocolate">
+    Chocolate
+</label>
+<label>
+    <input type="radio" name="q1" value="Vanilla">
+    Vanilla
+</label>
+<label>
+    <input type="radio" name="q1" value="Strawberry">
+    Strawberry
+</label>
+<label>
+    <input type="radio" name="q1" value="Cookie Dough">
+    Cookie Dough
+</label>
+    <br>
+    <button type="submit">Send</button>
+</form>
+
+<form method="post" action="http://requestb.in/qwadpeqw">
+    <h2>Select Testing</h2>
+    <label for="Male">Are You A Male?</label>
+    <select id="Male" name="Male">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+    </select>
+    <br>
+    <button type="submit">Send</button>
+</form>
+
+<form method="Post" action="http://requestb.in/qwadpeqw">
+    <label for="os">What Colors Are In A Rainbow </label>
+    <select id="os" name="os[]" multiple>
+        <option value="Red">Red</option>
+        <option value="Yellow">Yellow</option>
+        <option value="Black">Black</option>
+    </select>
+    <br>
+    <button type="submit">Send</button>
+</form>
+</body>
+</html>

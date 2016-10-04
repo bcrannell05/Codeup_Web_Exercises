@@ -1,0 +1,37 @@
+font: {20px Montserrat, sans-serif;
+line-height: 1.8;
+color: black;
+}
+p {font-size: 16px;}
+.margin {margin-bottom: 45px;}
+.bg-1 {
+    background-color: red;
+    color: #ffffff;
+}
+.bg-3 {
+    background-color: white; /* White */
+    color: black;
+}
+.bg-4 {
+    background-color: white; /* Black Gray */
+    color: black;
+}
+.container-fluid {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.navbar {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 25px;
+    height: 5px;
+}
+.navbar-nav {
+    float: none;
+    margin:0 auto;
+    display: table;
+    table-layout: fixed;
+}
