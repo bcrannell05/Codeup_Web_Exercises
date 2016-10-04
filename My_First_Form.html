@@ -3,96 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <title>My First Form</title>
-    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
 </head>
 <body>
+<div class="container">
 <h1>User Login</h1>
-<form method="POST" action="http://requestb.in/qwadpeqw">
-    <p>
+    <form>
+        <div class="form-group">
         <label for="username">Username</label>
-        <input id="username" name="username" type="text">
-    </p>
-    <p>
+        <input id="username" name="username" type="text" class="form-control">
+    </div>
+    <div class="form-group">
         <label for="password">Password</label>
-        <input id="password" name="password" type="password">
-    </p>
+        <input id="password" name="password" type="password" class="form-control">
+    </div>
     <p>
-        <input type="submit">
+        <input type="submit" class="btn btn-default">
     </p>
-</form>
+        </form>
 <h1>Compose an Email</h1>
     <form method="post" action="http://requestb.in/qwadpeqw">
-        <p>
+        <div class="form-group">
             <label for="from">To</label>
-            <input id="from" name="From" type="text"
-        </p>
-        <p>
+            <input id="from" name="From" type="text" class="form-control">
+        </div>
+        <div class="form-group">
             <label for="To">From</label>
-            <input id="To" name="To" type="text"
-        </p>
-        <p>
+            <input id="To" name="To" type="text" class="form-control">
+        </div>
+        <div class="form-group">
             <label for="subject">Subject</label>
-            <input id="subject" name="subject" type="text">
-        </p>
+            <input id="subject" name="subject" type="text" class="form-control">
+        </div>
+        <div class="form-group">
             <label for="body">Body</label>
-            <textarea id="body" name="body" rows="5" cols="40"></textarea>
-        <br>
-        <input type="checkbox" id="Save_Copy_to_Sent_Folder" name="Save_Copy_to_Sent_Folder" value="yes" checked>
-        <label for="Save_Copy_to_Sent_Folder">Save Copy to Sent Folder</label>
-        <br>
-        <button type="Submit">Send</button>
+            <textarea id="body" name="body" rows="5" cols="40" class="form-control"></textarea>
+            </div>
+        <div class="checkbox">
+            <label for="Save_Copy_to_Sent_Folder">
+            <input type="checkbox" id="Save_Copy_to_Sent_Folder" name="Save_Copy_to_Sent_Folder" value="yes" checked>
+            Save Copy to Sent Folder</label>
+        </div>
+        <button type="Submit" class="btn btn-default">Send</button>
 </form>
     <p>Which colors do you like?</p>
 <form method="post" action="http://requestb.in/qwadpeqw">
-        <label><input type="checkbox" id="os1" name="os[]" value="Red"> Green</label>
+    <div class="checkbox">
+    <label><input type="checkbox" id="os1" name="os[]" value="Red"> Green</label>
+        </div>
+    <div class="checkbox">
         <label><input type="checkbox" id="os2" name="os[]" value="Green"> Red</label>
+        </div>
+    <div class="checkbox">
         <label><input type="checkbox" id="os3" name="os[]" value="Blue"> Blue</label>
-    <br>
-    <button type="submit">Send</button>
+    </div>
+    <button type="submit" class="btn btn-default">Send</button>
 </form>
 
 <form method="post" action="http://requestb.in/qwadpeqw">
 <p>What is Your Favorite Ice Cream Flavor?</p>
-<label>
+<div class="radio">
+    <label>
     <input type="radio" name="q1" value="Chocolate">
     Chocolate
-</label>
-<label>
+    </label>
+</div>
+    <div class="radio">
+    <label>
     <input type="radio" name="q1" value="Vanilla">
     Vanilla
 </label>
-<label>
+</div>
+    <div class="radio">
+        <label>
     <input type="radio" name="q1" value="Strawberry">
     Strawberry
 </label>
-<label>
+</div>
+    <div class="radio">
+        <label>
     <input type="radio" name="q1" value="Cookie Dough">
     Cookie Dough
 </label>
-    <br>
-    <button type="submit">Send</button>
+        </div>
+    <button type="submit" class="btn btn-default">Send</button>
 </form>
 
 <form method="post" action="http://requestb.in/qwadpeqw">
     <h2>Select Testing</h2>
+    <div class="form-group">
     <label for="Male">Are You A Male?</label>
-    <select id="Male" name="Male">
+    <select id="Male" name="Male" class="form-control">
         <option value="1">Yes</option>
         <option value="0">No</option>
     </select>
-    <br>
-    <button type="submit">Send</button>
+    </div>
+    <button type="submit" class="btn btn-default">Send</button>
 </form>
 
 <form method="Post" action="http://requestb.in/qwadpeqw">
+    <div class="form-group">
     <label for="os">What Colors Are In A Rainbow </label>
-    <select id="os" name="os[]" multiple>
+    <select id="os" name="os[]" multiple class="form-control">
         <option value="Red">Red</option>
         <option value="Yellow">Yellow</option>
         <option value="Black">Black</option>
     </select>
-    <br>
-    <button type="submit">Send</button>
+    </div>
+    <button type="submit" class="btn btn-default">Send</button>
 </form>
+    </div>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
